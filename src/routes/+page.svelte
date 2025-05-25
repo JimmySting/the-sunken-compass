@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import DrinkMenuItem from '$lib/components/DrinkMenuItem.svelte';
 
 	type Drink = {
@@ -12,25 +13,25 @@
 	const menuItems: Drink[] = [
 		{
 			id: 1,
-			imageSrc: '/img/daiquiri.png',
+			imageSrc: `${base}/img/daiquiri.png`,
 			title: 'House Daiquiri',
 			ingredients: ['Probitas', 'Kohana Kea', 'Midori', 'Lime', 'Simple', 'Chartreuse']
 		},
 		{
 			id: 2,
-			imageSrc: '/img/old-fashioned.png',
+			imageSrc: `${base}/img/old-fashioned.png`,
 			title: 'Rum Old Fashioned',
 			ingredients: ['El Dorado 12', 'Allspice', 'Simple', 'Bitters']
 		},
 		{
 			id: 3,
-			imageSrc: '/img/fifty-fifty.png',
+			imageSrc: `${base}/img/fifty-fifty.png`,
 			title: 'Fifty-Fifty',
 			ingredients: ['Smith & Cross', 'Cynar']
 		},
 		{
 			id: 4,
-			imageSrc: '/img/beerlao.png',
+			imageSrc: `${base}/img/beerlao.png`,
 			title: 'House Beer',
 			ingredients: ['Laotian gold!']
 		}
